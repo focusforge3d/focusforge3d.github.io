@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | FocusForge Astrophotography Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="FocusForge"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="shop.html" class="btn btn-primary desktop-only">Shop Now</a>
+            <button class="hamburger mobile-only" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="section" style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Full Catalog</span>
+                <h2>Our Accessories</h2>
+                <p style="color: var(--color-muted); margin-top: 12px;">Browse our collection of precision-engineered 3D printed parts. Download the STL for personal use or buy a high-quality print on Etsy.</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Products loaded dynamically from Google Sheets -->
+                <div class="loading-state">
+                    <i class="fas fa-circle-notch fa-spin"></i> Loading accessories...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="FocusForge"></a>
+                <p style="margin-top: 16px; color: var(--color-muted);">Precision-printed for the night sky. Built for astronomers who know the difference.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping Policy</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 FocusForge · Portugal · <a href="https://www.etsy.com" target="_blank" style="color: var(--color-accent);">Etsy Shop →</a></p>
+        </div>
+    </footer>
+
+    <script src="js/sheets-config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
