@@ -64,7 +64,7 @@ function parseCSV(csvText) {
         // Simple CSV parsing (handles basic cases)
         const cells = parseCSVLine(line);
 
-        if (cells.length > 0) {
+        if (cells.length > 0 && cells[SHEETS_CONFIG.COLUMNS.name] && cells[SHEETS_CONFIG.COLUMNS.name].trim() !== '') {
             let finalImage = 'assets/images/bahtinov.png';
             const rawImage = cells[SHEETS_CONFIG.COLUMNS.imageUrl];
             if (rawImage && rawImage.trim() !== '') {
